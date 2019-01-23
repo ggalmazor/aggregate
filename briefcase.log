@@ -1,0 +1,317 @@
+2019-01-23 10:51:12,154 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/formUpload
+2019-01-23 10:51:12,193 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added form_def_file: All widgets.xml
+2019-01-23 10:51:12,231 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/formUpload
+2019-01-23 10:51:12,241 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadForm(ServerUploader.java:340)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:216)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,241 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/submission
+2019-01-23 10:51:12,741 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/view/submissionList?formId=all-widgets&cursor=&numEntries=100
+2019-01-23 10:51:12,774 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/view/submissionList?formId=all-widgets&cursor=&numEntries=100
+2019-01-23 10:51:12,780 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,812 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:12,819 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679372647.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679372647.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679367254.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679367254.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679413485.mp4
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679413485.mp4
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679361418.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679361418.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679424211.mp4
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679424211.mp4
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679388070.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679388070.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679378279.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679378279.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679394572.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679394572.jpg
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid8c5099f0-e26d-4260-966c-21615cee2803/1541679408093.mp4
+2019-01-23 10:51:12,820 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679408093.mp4
+2019-01-23 10:51:12,855 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:12,861 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,861 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,861 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678407924.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678407924.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678454768.mp4
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541678454768.mp4
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678397156.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678397156.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678387291.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678387291.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678393059.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678393059.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678423156.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678423156.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678449159.mp4
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541678449159.mp4
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid91c30e7d-e59c-43db-bf50-b3b946845e62/1541678430369.jpg
+2019-01-23 10:51:12,862 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678430369.jpg
+2019-01-23 10:51:12,894 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:12,903 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,904 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,949 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:12,953 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679372647.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679372647.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679367254.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679367254.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679413485.mp4
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679413485.mp4
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679361418.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679361418.jpg
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679424211.mp4
+2019-01-23 10:51:12,954 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679424211.mp4
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679388070.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679388070.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679378279.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679378279.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679394572.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541679394572.jpg
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_8c5099f0_e26d_4260_966c_21615cee2803/1541679408093.mp4
+2019-01-23 10:51:12,955 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541679408093.mp4
+2019-01-23 10:51:12,985 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:12,991 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678407924.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678407924.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678454768.mp4
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541678454768.mp4
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678397156.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678397156.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678387291.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678387291.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678393059.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678393059.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678423156.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678423156.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678449159.mp4
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added video file 1541678449159.mp4
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/All widgets/instances/uuid_91c30e7d_e59c_43db_bf50_b3b946845e62/1541678430369.jpg
+2019-01-23 10:51:12,992 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added image file 1541678430369.jpg
+2019-01-23 10:51:13,022 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:13,027 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,047 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/formUpload
+2019-01-23 10:51:32,048 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added form_def_file: Audit.xml
+2019-01-23 10:51:32,097 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/formUpload
+2019-01-23 10:51:32,104 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadForm(ServerUploader.java:340)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:216)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,105 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/submission
+2019-01-23 10:51:32,176 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Parsing URL http://localhost:8080/view/submissionList?formId=Audit&cursor=&numEntries=100
+2019-01-23 10:51:32,213 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/view/submissionList?formId=Audit&cursor=&numEntries=100
+2019-01-23 10:51:32,217 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,218 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid10e2dce1-eb17-44af-a6c6-d9c19f787094/audit.csv
+2019-01-23 10:51:32,218 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,249 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,251 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,252 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,252 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid4064b301-f21b-445a-a4b3-13931932a6c7/audit.csv
+2019-01-23 10:51:32,252 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,306 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,310 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,311 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,311 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid53538912-b6b6-4234-8fdf-a44886003a87/audit.csv
+2019-01-23 10:51:32,311 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,343 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,346 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,346 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,346 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid68ee8d35-ae39-4c9b-99cd-b73264184d2e/audit.csv
+2019-01-23 10:51:32,346 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,377 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,380 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,381 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,381 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid6b8bda0e-2d35-44ad-b315-11495e7ac6e9/audit.csv
+2019-01-23 10:51:32,381 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,429 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,433 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,433 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,433 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid83fd1c4c-9cdf-4ef6-ae63-d5c2ba05c078/audit.csv
+2019-01-23 10:51:32,433 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,474 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,478 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,479 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,479 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuid8d29d87f-b51d-4365-8a15-9f36f8443222/audit.csv
+2019-01-23 10:51:32,479 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,516 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,519 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,520 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,520 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuidb84ec37e-6a09-4896-9683-eb619c2b87ec/audit.csv
+2019-01-23 10:51:32,520 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,571 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,575 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:32,576 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added xml_submission_file: submission.xml
+2019-01-23 10:51:32,576 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Trying file /home/guillermo/ODK Briefcase Storage/forms/Audit/instances/uuidd4129264-b31a-4d49-a0f9-dfc06a1c05fb/audit.csv
+2019-01-23 10:51:32,576 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - added csv file audit.csv
+2019-01-23 10:51:32,605 [pool-2-thread-1] INFO  o.o.briefcase.util.AggregateUtils - Attempting URI http://localhost:8080/submission
+2019-01-23 10:51:32,608 [pool-2-thread-1] ERROR o.o.briefcase.util.AggregateUtils - upload failed
+org.opendatakit.briefcase.model.XmlDocumentFetchException: Authentication failure
+	at org.opendatakit.briefcase.util.AggregateUtils.httpRetrieveXmlDocument(AggregateUtils.java:244)
+	at org.opendatakit.briefcase.util.AggregateUtils.uploadFilesToServer(AggregateUtils.java:513)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadSubmission(ServerUploader.java:407)
+	at org.opendatakit.briefcase.util.ServerUploader.uploadFormAndSubmissionFiles(ServerUploader.java:244)
+	at org.opendatakit.briefcase.util.TransferToServer.doAction(TransferToServer.java:51)
+	at org.opendatakit.briefcase.util.TransferAction$UploadTransferRunnable.run(TransferAction.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-23 10:51:50,060 [AWT-EventQueue-0] INFO  o.o.b.model.TerminationFuture - cancel requested: Main window closed
+2019-01-23 10:51:50,061 [AWT-EventQueue-0] INFO  o.o.b.model.TerminationFuture - cancel requested: Main window closed
